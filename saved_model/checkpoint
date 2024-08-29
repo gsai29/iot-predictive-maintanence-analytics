@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/saved_model/my_model"
+all_model_checkpoint_paths: "C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/saved_model/my_model"
