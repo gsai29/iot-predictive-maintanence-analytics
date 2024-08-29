@@ -10,7 +10,7 @@ from sklearn.svm import OneClassSVM
 app = Flask(__name__)
 CORS(app)
 
-model_path = 'C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/saved_model/my_model'
+model_path = 'C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance/saved_model/my_model'
 sess = tf.compat.v1.Session()
 saver = tf.compat.v1.train.import_meta_graph(f'{model_path}.meta')
 saver.restore(sess, model_path)
@@ -21,7 +21,7 @@ f_outputs = graph.get_tensor_by_name("MatMul:0")
 data_buffer = []
 
 def loadCSV():
-    folder_path = 'C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/dataset/raw_data'
+    folder_path = 'C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance/dataset/raw_data'
     file_name = 'part-00000-d6f2018b-b707-4246-82b2-a60e146f330c-c000.csv'
     full_path = f'{folder_path}/{file_name}'
     df = pd.read_csv(full_path).sort_values('TimeStamp', ascending=True).reset_index(drop=True)

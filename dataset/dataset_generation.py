@@ -8,7 +8,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Define path to the XML files
-path_to_data = "C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/dataset/demo_data/*.dat"
+path_to_data = "C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance/dataset/demo_data/*.dat"
 
 # Load XML files
 df = spark.read.format("xml") \
@@ -26,7 +26,7 @@ pivoted_df.show()
 
 # Optionally, save the DataFrame to a CSV file
 # pivoted_df.write.format("csv").mode("overwrite").option("header", True).save("C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/dataset/raw_data")
-pivoted_df.coalesce(1).write.format("csv").mode("overwrite").option("header", True).save("C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance-master/dataset/raw_data")
+pivoted_df.coalesce(1).write.format("csv").mode("overwrite").option("header", True).save("C:/Users/vigne/OneDrive/Documents/ML/Predictive-Maintenance-master/Predictive-Maintenance/dataset/raw_data")
 
 # Stop Spark Session
 spark.stop()
