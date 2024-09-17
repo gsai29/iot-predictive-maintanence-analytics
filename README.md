@@ -1,7 +1,7 @@
 # IoT device Predictive Maintenance and Management.
 By Vignesh Sundaram, Sai Manikandan, Shrishailya Chavan
 ## Goal
-- Our ultimate goal is to build a non-exclusive end-to-end IoT device predictive maintenance and management solution, from on-field devices all the way to a web console.
+- Our ultimate goal is to build a non-exclusive end-to-end IoT device predictive maintenance and management solution, from on-field devices all the way to a web console
 
 
 ## Repository structure
